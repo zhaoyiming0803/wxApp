@@ -11,6 +11,8 @@ Page({
 		motto: 'Hello World',
 		userInfo: {},
 		hasUserInfo: false,
+		// canIUse: 判断小程序的API，回调，参数，组件等是否在当前版本可用。此接口从基础库 1.1.1 版本开始支持。
+		// https://developers.weixin.qq.com/miniprogram/dev/api/api-caniuse.html
 		canIUse: wx.canIUse('button.open-type.getUserInfo'),
 		userList: [
 			{ id: 1, uname: '张三', sex: 1 },
@@ -19,6 +21,68 @@ Page({
 			{ id: 4, uname: '赵六', sex: 1 }
 		],
 		cameraContext: null
+	},
+	customData: {
+		a: 1,
+		b: 2
+	},
+
+	onLoad: function () {
+		console.log('onLoad');
+		this.test(); // 通过this调用当前组件内的方法
+		if (app.globalData.userInfo) {
+			this.setData({
+				userInfo: app.globalData.userInfo,
+				hasUserInfo: true
+			})
+		} else if (this.data.canIUse) {
+			// 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+			// 所以此处加入 callback 以防止这种情况
+			app.userInfoReadyCallback = res => {
+				this.setData({
+					userInfo: res.userInfo,
+					hasUserInfo: true
+				})
+			}
+		} else {
+			// 在没有 open-type=getUserInfo 版本的兼容处理
+			wx.getUserInfo({
+				success: res => {
+					app.globalData.userInfo = res.userInfo
+					this.setData({
+						userInfo: res.userInfo,
+						hasUserInfo: true
+					})
+				}
+			})
+		}
+
+		/*try {
+			this.data.cameraContext = wx.createCameraContext('myCamera');
+			this.data.cameraContext.takePhoto();
+		} catch (e) {
+			wx.showModal({
+				title: '提示',
+				content: '微信版本过低，请升级后再使用照相机'
+			});
+		}
+
+		this.mapCtx = wx.createMapContext('myMap');*/
+	},
+
+	onShow: function () {
+		console.log('onShow');
+	},
+
+	onReady: function () {
+		console.log('onReady');
+		console.log(this.customData);
+	},
+	onShareAppMessage: function () {
+		return {
+			title: '转发标题',
+			path: '/page/index?id=123'
+		}
 	},
 	onReachBottom: (options) => {
 		console.log(options); // 触底上拉调用
@@ -55,8 +119,6 @@ Page({
 			}
 		}),
 
-
-
 		wx.getLocation({
 			type: 'wgs84',
 			success: function (res) {
@@ -90,53 +152,19 @@ Page({
 	test () {
 		console.log('this is a test function!');
 	},
-	onLoad: function () {
-		this.test(); // 通过this调用当前组件内的方法
-		if (app.globalData.userInfo) {
-			this.setData({
-				userInfo: app.globalData.userInfo,
-				hasUserInfo: true
-			})
-		} else if (this.data.canIUse) {
-			// 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-			// 所以此处加入 callback 以防止这种情况
-			app.userInfoReadyCallback = res => {
-				this.setData({
-					userInfo: res.userInfo,
-					hasUserInfo: true
-				})
-			}
-		} else {
-			// 在没有 open-type=getUserInfo 版本的兼容处理
-			wx.getUserInfo({
-				success: res => {
-					app.globalData.userInfo = res.userInfo
-					this.setData({
-						userInfo: res.userInfo,
-						hasUserInfo: true
-					})
-				}
-			})
-		}
-
-		try {
-			this.data.cameraContext = wx.createCameraContext('myCamera');
-			this.data.cameraContext.takePhoto();
-		} catch (e) {
-			wx.showModal({
-				title: '提示',
-				content: '微信版本过低，请升级后再使用照相机'
-			});
-		}
-
-		this.mapCtx = wx.createMapContext('myMap');
-	},
 	getUserInfo: function (e) {
-		// console.log(e)
+		console.log(e)
 		app.globalData.userInfo = e.detail.userInfo
 		this.setData({
 			userInfo: e.detail.userInfo,
 			hasUserInfo: true
+		})
+	},
+	useCamera: function () {
+		wx.scanCode({
+			success: (res) => {
+				console.log(res)
+			}
 		})
 	}
 })

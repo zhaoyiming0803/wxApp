@@ -40,3 +40,7 @@
 .bc-blue {
 	background-color: blue;
 }
+
+.test-txt {
+	font-size: 30rpx;
+}

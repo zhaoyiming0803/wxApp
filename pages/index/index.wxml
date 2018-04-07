@@ -20,6 +20,10 @@
         <view id="blue" class="scroll-view-item bc_blue"></view>
     </scroll-view> -->
 
+	<view>
+		<text class="test-txt">测试文字</text>
+	</view>
+
     <view wx:if="{{1===2}}">
         <text>1==2</text>
     </view>
@@ -33,6 +37,10 @@
 
 	<view>
 		<button bind:tap="showLogs">查看日志</button>
+	</view>
+
+	<view>
+		<button bind:tap="useCamera">调起相机</button>
 	</view>
 
 	<!-- 只能跳转到非tab页面 -->

@@ -14,8 +14,11 @@
 	},
 
 	"tabBar": {
+		"selectedColor": "#11cd6e",
 		"list": [
 			{
+				"iconPath": "/static/images/a.png",
+				"selectedIconPath": "/static/images/b.png",
 				"pagePath": "pages/index/index",
 				"text": "首页"
 			},
@@ -24,7 +27,7 @@
 				"text": "日志"
 			}
 		],
-		"position": "top"
+		"position": "bottom"
 	},
 
 	"networkTimeout": {
