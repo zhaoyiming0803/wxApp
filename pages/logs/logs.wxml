@@ -3,5 +3,5 @@
   <!-- <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block> -->
-  <view>这里原来是小程序使用日志</view>
+  <view wx:if="{{byQrcodeInto}}">这里原来是小程序使用日志</view>
 </view>

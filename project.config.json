@@ -20,9 +20,23 @@
 			"current": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"plugin": {
 			"current": -1,
 			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "长按识别二维码进入log页",
+					"pathName": "pages/logs/logs",
+					"scene": "1012"
+				}
+			]
 		}
 	}
 }

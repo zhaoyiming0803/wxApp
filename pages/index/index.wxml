@@ -13,44 +13,5 @@
         <text class="user-motto" bindtap='showWechat'>{{motto}}</text>
     </view>
 
-    <!-- <scroll-view scroll-y style="height: 200px;">
-        <view id="green" class="scroll-view-item bc_green"></view>
-        <view id="red" class="scroll-view-item bc_red"></view>
-        <view id="yellow" class="scroll-view-item bc_yellow"></view>
-        <view id="blue" class="scroll-view-item bc_blue"></view>
-    </scroll-view> -->
-
-	<view>
-		<text class="test-txt">测试文字</text>
-	</view>
-
-    <view wx:if="{{1===2}}">
-        <text>1==2</text>
-    </view>
-    <view wx:else>
-        <text>1！=2</text>
-    </view>
-
-    <block wx:for="{{userList}}" wx:key="index">
-        <view>{{item.uname}}</view>
-    </block>
-
-	<view>
-		<button bind:tap="showLogs">查看日志</button>
-	</view>
-
-	<view>
-		<button bind:tap="useCamera">调起相机</button>
-	</view>
-
-	<!-- 只能跳转到非tab页面 -->
-	<navigator url="/pages/logs/logs">navigator跳转</navigator>
-
-	<audio id="myAudio" controls loop name="此时此刻" author="许巍" poster="http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000" src='http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46'></audio>
-
-	<camera id="myCamera" device-position="back" flash="auto"></camera>
-
-	<map id="myMap" show-location scale="14" style="width: 100%; height: 300px;"></map>
-	<button type="primary" bindtap="getCenterLocation">获取位置</button>
-	<button type='primary' bindtap='moveToLocation'>移动位置</button>
+    <button open-type="getUserInfo" bindgetuserinfo="toLogin">用微信授权登录</button>
 </view>
