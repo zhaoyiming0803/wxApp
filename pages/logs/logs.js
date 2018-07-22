@@ -7,8 +7,12 @@ console.log(wxUtil);
 const app = getApp();
 
 Page({
+  data: {
+
+  },
+
   onLoad: (options) => {
-		console.log(options);
-		console.log(app.globalData.num);
+		
   }
+  
 })

@@ -1,7 +1,4 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <!-- <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block> -->
-  <view>这里原来是小程序使用日志</view>
+<view>
+  <navigator url="/pages/scroll-view/scroll-view">scroll-view组件</navigator>
 </view>
+

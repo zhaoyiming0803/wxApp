@@ -1,0 +1,27 @@
+<scroll-view 
+  scroll-y 
+  style="height: 200px;" 
+  bindscrolltoupper="upper" 
+  bindscrolltolower="lower" 
+  bindscroll="scroll" 
+  scroll-into-view="{{toView}}" 
+  scroll-top="{{scrollTop}}">
+  <view 
+    wx:for="{{list}}" 
+    wx:item="item" 
+    wx:key="index" 
+    id="{{item.color}}" 
+    class="scroll-view-item bc_{{item.color}}"
+    style="height: {{item.height}}px;">
+  </view>
+</scroll-view>
+
+
+<view 
+  wx:for="{{list}}" 
+  wx:item="item" 
+  wx:key="index" 
+  data-color="{{item.color}}"
+  bindtap="scrollToView"  
+  style="height: 30px; line-height: 30px; color: {{thisTab === item.color ? 'red' : 'black'}}">{{item.color}}
+</view>
