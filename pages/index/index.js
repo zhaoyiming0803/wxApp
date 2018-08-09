@@ -72,6 +72,7 @@ Page({
 
 	onShow: function () {
 		console.log('onShow');
+    wx.setStorageSync('is_from_login', false);
 	},
 
 	onReady: function () {
