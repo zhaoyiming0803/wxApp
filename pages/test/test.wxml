@@ -1,0 +1,13 @@
+<view>
+  <button bindtap="toIndex">去首页</button>
+
+  <picker 
+    mode="region" 
+    bindchange="bindRegionChange" 
+    value="{{region}}" 
+    custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>

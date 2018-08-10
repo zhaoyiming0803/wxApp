@@ -4,4 +4,6 @@
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block> -->
   <view wx:if="{{byQrcodeInto}}">这里原来是小程序使用日志</view>
+
+  <button bindtap="toTest" data-id="1" data-name="2">去test页</button>
 </view>

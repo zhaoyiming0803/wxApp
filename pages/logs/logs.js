@@ -11,12 +11,22 @@ Page({
     byQrcodeInto: false
   },
 
-  onLoad: (options) => {
-		
+  onLoad: function (options) {
+    this.test();
+    console.log('onLoad');
+  },
+
+  onReady: function () {
+    console.log('页面初次渲染完成！');
+  },
+
+  test: function () {
+    console.log(this);
+    console.log(123);
   },
 
   onShow: function ()  {
-    console.log(this);
+    console.log('onShow');
     if (wx.getStorageSync('byQrcodeIntoLog')) {
       this.setData({
         byQrcodeInto: true
@@ -43,5 +53,12 @@ Page({
 
   onReachBottom: function () {
     console.log('onReachBottom-log');
+  },
+
+  toTest: function (e) {
+    console.log(e);
+    wx.navigateTo({
+      url: '/pages/test/test'
+    });
   }
 })
