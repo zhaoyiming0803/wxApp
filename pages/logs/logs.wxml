@@ -6,6 +6,8 @@
   <view wx:if="{{byQrcodeInto}}">这里原来是小程序使用日志</view>
 
   <button bindtap="toTest" data-id="1" data-name="2">去test页</button>
+</view>
+
 <view>
   <navigator url="/pages/scroll-view/scroll-view">scroll-view组件</navigator>
 </view>

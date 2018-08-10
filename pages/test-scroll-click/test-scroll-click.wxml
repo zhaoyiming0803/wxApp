@@ -1,0 +1,9 @@
+<view class="test-container">
+	<view class="content" bindtap="content">
+		123
+		<!-- 将class为modal的view放到这个位置，会和content形成父子级，由于事件捕获和冒泡，会形成点击穿透和滚动穿透。也可以使用小程序提供的禁止冒泡或禁止捕获的方法解决 -->
+		<!-- <view class="modal" bindtap="modal"></view> -->
+	</view>
+</view>
+
+<view class="modal" bindtap="modal"></view>
