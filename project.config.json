@@ -32,9 +32,8 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "长按识别二维码进入log页",
-					"pathName": "pages/logs/logs",
-					"scene": "1012"
+					"name": "scroll-view组件",
+					"pathName": "pages/scroll-view/scroll-view"
 				}
 			]
 		}

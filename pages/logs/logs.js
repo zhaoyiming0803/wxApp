@@ -27,6 +27,25 @@ Page({
 
   onShow: function ()  {
     console.log('onShow');
+    
+    if (!app.globalData.isLogin) {
+      const isFromLogin = wx.getStorageSync('is_from_login');
+      if (isFromLogin) {
+        wx.switchTab({
+          url: '/pages/index/index',
+        });
+      } else {
+        wx.navigateTo({
+          url: '/pages/login/login'
+        });
+      }
+    } else {
+      wx.showLoading({
+        title: '加载中',
+      })
+      console.log('已登录，正常加载数据！');
+    }
+
     if (wx.getStorageSync('byQrcodeIntoLog')) {
       this.setData({
         byQrcodeInto: true
@@ -60,5 +79,7 @@ Page({
     wx.navigateTo({
       url: '/pages/test/test'
     });
+
   }
+  
 })
