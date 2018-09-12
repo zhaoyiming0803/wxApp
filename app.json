@@ -6,7 +6,8 @@
     "pages/report-list/report-list",
     "pages/login/login",
     "pages/test/test",
-		"pages/test-scroll-click/test-scroll-click"
+    "pages/test-scroll-click/test-scroll-click",
+    "pages/circle/circle"
   ],
   "window": {
     "backgroundTextStyle": "light",

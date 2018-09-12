@@ -1,20 +1,22 @@
 <!--index.wxml-->
 <view class="container">
 
-    <navigator url="/pages/report-list/report-list">查看报告</navigator>
-		<navigator url="/pages/test-scroll-click/test-scroll-click">测试滚动穿透和点击穿透</navigator>
-    
-		<view class="userinfo">
-        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-        <block wx:else>
-            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-        </block>
-    </view>
+	<navigator url="/pages/report-list/report-list">查看报告</navigator>
+	<navigator url="/pages/test-scroll-click/test-scroll-click">测试滚动穿透和点击穿透</navigator>
+	<navigator url="/pages/circle/circle">圆形比例图</navigator>
 
-    <view class="usermotto">
-        <text class="user-motto" bindtap='showWechat'>{{motto}}</text>
-    </view>
+	<view class="userinfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称
+		</button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
 
-    <button open-type="getUserInfo" bindgetuserinfo="toLogin">用微信授权登录</button>
+	<view class="usermotto">
+		<text class="user-motto" bindtap='showWechat'>{{motto}}</text>
+	</view>
+
+	<button open-type="getUserInfo" bindgetuserinfo="toLogin">用微信授权登录</button>
 </view>

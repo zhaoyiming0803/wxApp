@@ -1,0 +1,26 @@
+<view class="box">
+  <circle id='circle1' bg='circle-bg1' draw='circle-draw1' bind:runEvent="_runEvent">
+    <view class="circle-info" bindtap="changeTime">
+      <view class="circle-dot"></view>
+      <text class='circle-txt'></text>
+    </view>
+  </circle>
+</view>
+
+<view class="box">
+  <circle id='circle2' bg='circle-bg2' draw='circle-draw2' bind:runEvent="_runEvent">
+    <view class="circle-info" bindtap="changeTime">
+      <view class="circle-dot"></view>
+      <text class='circle-txt'></text>
+    </view>
+  </circle>
+</view>
+
+<view class="box">
+  <circle id='circle3' bg='circle-bg3' draw='circle-draw3' bind:runEvent="_runEvent">
+    <view class="circle-info" bindtap="changeTime">
+      <view class="circle-dot"></view>
+      <text class='circle-txt'></text>
+    </view>
+  </circle>
+</view>
