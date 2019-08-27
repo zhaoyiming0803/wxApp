@@ -11,6 +11,8 @@
 	"libVersion": "1.5.4",
 	"appid": "wxeff65b7b9ad942d5",
 	"projectname": "wxApp",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -45,7 +47,14 @@
 				{
 					"id": -1,
 					"name": "圆形比例图",
-					"pathName": "pages/circle/circle"
+					"pathName": "pages/circle/circle",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "vant组件",
+					"pathName": "pages/vant/vant",
+					"scene": null
 				}
 			]
 		}

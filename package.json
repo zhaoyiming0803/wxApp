@@ -1,0 +1,23 @@
+{
+  "name": "wxapp",
+  "version": "1.0.0",
+  "description": "1、登录、获取用户信息",
+  "main": "app.js",
+  "dependencies": {
+    "vant-weapp": "^0.5.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zymfe/wxApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zymfe/wxApp/issues"
+  },
+  "homepage": "https://github.com/zymfe/wxApp#readme"
+}

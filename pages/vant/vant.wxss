@@ -1,0 +1,4 @@
+.vant-container {
+  color: #f00;
+  font-size: 30rpx;
+}

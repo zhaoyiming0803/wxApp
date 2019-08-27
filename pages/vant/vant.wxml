@@ -1,0 +1,2 @@
+<view class="vant-container">{{num}}</view>
+<van-button type="info">vant 按钮</van-button>
