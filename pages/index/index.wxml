@@ -4,6 +4,7 @@
 	<navigator url="/pages/test-scroll-click/test-scroll-click">测试滚动穿透和点击穿透</navigator>
 	<navigator url="/pages/circle/circle">圆形比例图</navigator>
 	<navigator url="/pages/scroll-view/scroll-view">滚动定位</navigator>
+  <button open-type="contact" session-from="{a: 1, b: 2, c: 3}" send-message-title="hello world">客服传参</button>
 
 	<view class="userinfo">
 		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称
