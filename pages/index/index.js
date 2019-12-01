@@ -40,6 +40,10 @@ Page({
         }, 2000);
       }
     });
+
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   },
 
   /**
@@ -76,7 +80,7 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+   
   },
 
   toLogin (userInfo) {
