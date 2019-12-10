@@ -26,7 +26,7 @@ App({
             console.log('shareInfo: ', shareInfo);
             console.log('loginRes: ', loginRes);
             wx.request({
-              url: 'https://api.0351zhuangxiu.com/weapp/shareTicket',
+              url: 'https://api.0351zhuangxiu.com/wxapp/shareTicket',
               method: 'POST',
               data: {
                 ...shareInfo,
