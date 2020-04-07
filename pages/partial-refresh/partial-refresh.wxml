@@ -1,0 +1,6 @@
+<view>
+  <view wx:for="{{users}}" wx:key="{{item.id}}" bindtap="onChangeAge" data-idx="{{index}}">
+    <view>name: {{item.name}}</view>
+    <view>age: {{item.age}}</view>
+  </view>
+</view>

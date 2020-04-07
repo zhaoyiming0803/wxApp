@@ -6,6 +6,7 @@
   <navigator url="/pages/scroll-view/scroll-view">滚动定位</navigator>
   <button open-type="contact" session-from="region=1">region-1</button>
   <button open-type="contact" session-from="region=2">region-2</button>
+  <navigator url="/pages/partial-refresh/partial-refresh">局部刷新</navigator>
 
   <!-- 点击放到后可识别小程序码，但不能识别微信二维码 -->
   <image src="{{imgArr[0]}}" bindtap='previewImg'></image>

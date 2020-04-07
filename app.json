@@ -8,7 +8,8 @@
     "pages/test/test",
     "pages/test-scroll-click/test-scroll-click",
     "pages/circle/circle",
-    "pages/vant/vant"
+    "pages/vant/vant",
+    "pages/partial-refresh/partial-refresh"
   ],
   "window": {
     "backgroundTextStyle": "light",
