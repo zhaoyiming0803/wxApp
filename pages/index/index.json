@@ -3,5 +3,8 @@
 	"navigationBarTextStyle": "black",
 	"navigationBarTitleText": "首页",
 	"backgroundColor": "#eeeeee",
-	"backgroundTextStyle": "light"
+	"backgroundTextStyle": "light",
+	"usingComponents": {
+		"mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon"
+	}
 }

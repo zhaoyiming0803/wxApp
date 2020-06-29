@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-
+  <mp-icon icon="play" color="black" size="{{25}}"></mp-icon>
   <navigator url="/pages/test-scroll-click/test-scroll-click">测试滚动穿透和点击穿透</navigator>
   <navigator url="/pages/circle/circle">圆形比例图</navigator>
   <navigator url="/pages/scroll-view/scroll-view">滚动定位</navigator>
