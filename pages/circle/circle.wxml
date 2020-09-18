@@ -1,3 +1,4 @@
+<view>圆形比例图</view>
 <view class="box">
   <circle id='circle1' bg='circle-bg1' draw='circle-draw1' bind:runEvent="_runEvent">
     <view class="circle-info" bindtap="changeTime">

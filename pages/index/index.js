@@ -14,7 +14,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    setTimeout(() => {
+      const val = wx.pageScrollTo({
+        scrollTop: 0,
+        // selector: '#selector',
+        duration: 1000,
+        complete: function (e) {
+          console.log('page scroll: ', e)
+        }
+      })
+      console.log('valllll: ', val)
+    }, 3000)
   },
 
   /**
@@ -31,7 +41,7 @@ Page({
     console.log('onShow');
     
     wx.setStorageSync('is_from_login', false);
-
+return
     wx.startPullDownRefresh({
       success: function (res) {
         console.log(res);
@@ -98,5 +108,17 @@ Page({
       fail: function (res) { },
       complete: function (res) { },
     })
+  },
+
+  pullDown () {
+    wx.startPullDownRefresh({
+      success: (res) => {},
+    })
+
+    setTimeout(() => {
+      wx.stopPullDownRefresh({
+        success: (res) => {},
+      })
+    }, 2000)
   }
 })

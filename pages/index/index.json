@@ -1,9 +1,11 @@
 {
-	"navigationBarBackgroundColor": "#fff",
-	"navigationBarTextStyle": "black",
+	"navigationBarBackgroundColor": "#f00",
+	"navigationBarTextStyle": "white",
 	"navigationBarTitleText": "首页",
-	"backgroundColor": "#f00",
-	"backgroundTextStyle": "light",
+	"backgroundColor": "#eeee",
+	"backgroundTextStyle": "dark",
+	"enablePullDownRefresh": true,
+	"disableScroll": false,
 	"usingComponents": {
 		"mp-icon": "weui-miniprogram/icon/icon"
 	}

@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="test-mask"></view>
   <view>
     <mp-icon icon="play" color="black" size="{{25}}"></mp-icon>
     <view>mp-icon</view>
@@ -28,4 +29,11 @@
   </view>
 
   <button open-type="getUserInfo" bindgetuserinfo="toLogin">用微信授权登录</button>
+
+  <view id="selector">
+    <button loading="{{ true }}" size="mini" type="primary" hover-start-time="{{ 3000 }}" hover-stay-time="{{ 3000 }}">按钮哈</button>
+    <input style="background-color: red"  placeholder="请输入" value="涉及到佛教" auto-focus="{{ true }}" selection-start="{{ 1 }}" selection-end="{{ 1 }}"></input>
+    <checkbox></checkbox>
+    <button bindtap="pullDown">pull down</button>
+  </view>
 </view>

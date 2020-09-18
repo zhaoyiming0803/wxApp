@@ -22,6 +22,10 @@ Page({
     }, 1000);
   },
 
+  onShow () {
+    wx.startPullDownRefresh()
+  },
+
   countInterval (circle, circleDraw, scale) {
     let count = 0;
     const maxCount = 60;
@@ -39,5 +43,9 @@ Page({
   _runEvent(e) {
      console.log('_runEvent', e);
      console.log(e.detail);
+  },
+
+  onPullDownRefresh (e) {
+    console.log('onPullDownRefresh: ', e)
   }
 })
