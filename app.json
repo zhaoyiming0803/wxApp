@@ -9,7 +9,8 @@
     "pages/test-scroll-click/test-scroll-click",
     "pages/circle/circle",
     "pages/vant/vant",
-    "pages/partial-refresh/partial-refresh"
+    "pages/partial-refresh/partial-refresh",
+    "pages/progress/progress"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,82 +1,98 @@
 {
-	"description": "项目配置文件。",
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"enhance": false,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
-	},
-	"compileType": "miniprogram",
-	"libVersion": "1.5.4",
-	"appid": "wx2233cfeacd62ed7b",
-	"projectname": "wxApp",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"miniprogram": {
-			"current": 3,
-			"list": [
-				{
-					"id": -1,
-					"name": "scroll-view组件",
-					"pathName": "pages/scroll-view/scroll-view",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "日志",
-					"pathName": "pages/logs/logs",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "圆形比例图",
-					"pathName": "pages/circle/circle",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "vant组件",
-					"pathName": "pages/vant/vant",
-					"scene": null
-				}
-			]
-		}
-	}
+  "description": "项目配置文件。",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "compileType": "miniprogram",
+  "libVersion": "1.5.4",
+  "appid": "wx2233cfeacd62ed7b",
+  "projectname": "wxApp",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 3,
+      "list": [
+        {
+          "id": -1,
+          "name": "scroll-view组件",
+          "pathName": "pages/scroll-view/scroll-view",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "日志",
+          "pathName": "pages/logs/logs",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "圆形比例图",
+          "pathName": "pages/circle/circle",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "vant组件",
+          "pathName": "pages/vant/vant",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/progress/progress",
+          "pathName": "pages/progress/progress",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
 }
