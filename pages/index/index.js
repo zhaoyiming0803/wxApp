@@ -120,5 +120,9 @@ return
         success: (res) => {},
       })
     }, 2000)
+  },
+
+  onPageScroll (e) {
+    console.log(e)
   }
 })

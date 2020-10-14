@@ -7,6 +7,7 @@
   </view>
   <navigator url="/pages/test-scroll-click/test-scroll-click">测试滚动穿透和点击穿透</navigator>
   <navigator url="/pages/circle/circle">圆形比例图</navigator>
+  <navigator url="/pages/progress/progress">正/倒计时</navigator>
   <navigator url="/pages/scroll-view/scroll-view">滚动定位</navigator>
   <button open-type="contact" session-from="region=1">region-1</button>
   <button open-type="contact" session-from="region=2">region-2</button>

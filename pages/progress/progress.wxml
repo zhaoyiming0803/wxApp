@@ -1,7 +1,10 @@
+<!-- 圆形进度条：https://segmentfault.com/a/1190000013219501 -->
+<!-- 各种小球的运动轨迹：http://selinayu.cc/2018/07/23/canvas-%E5%B0%8F%E7%90%83%E8%BF%90%E5%8A%A8%E8%BD%A8%E8%BF%B9/ -->
 <view class="container">
   <view class='progress_box'>
     <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas>
     <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+    <canvas class="progoress_spot" canvas-id="canvasSpot"></canvas>
     <view class="progress_text">
       <view class="progress_dot"></view>
       <text class='progress_info'> {{progress_txt}}</text>
