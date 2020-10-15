@@ -10,7 +10,7 @@ Page({
     width: 220,
     height: 220,
     radius: 100,
-    timerType: 2, // 1：倒计时 2：正计时
+    timerType: 1, // 1：倒计时 2：正计时
     ratio: 0
   },
 
@@ -23,23 +23,25 @@ Page({
   },
 
   countInterval: function () {
-    this.countTimer = setInterval(() => {
-      if (this.data.ratio <= 1) {
-        if (this.data.timerType === 2) {
-          this.drawCircle( (this.data.ratio))
-          this.drawSpot(-this.data.ratio)
+    setTimeout(() => {
+      this.countTimer = setInterval(() => {
+        if (this.data.ratio <= 1) {
+          if (this.data.timerType === 2) {
+            this.drawCircle( (this.data.ratio))
+            this.drawSpot(-this.data.ratio)
+          } else {
+            this.drawCircle( (-this.data.ratio))
+            this.drawSpot(this.data.ratio)
+          }
+          this.data.ratio += 0.01
         } else {
-          this.drawCircle( (-this.data.ratio))
-          this.drawSpot(this.data.ratio)
+          this.setData({
+            progress_txt: "匹配成功"
+          });
+          clearInterval(this.countTimer);
         }
-        this.data.ratio += 0.01
-      } else {
-        this.setData({
-          progress_txt: "匹配成功"
-        });
-        clearInterval(this.countTimer);
-      }
-    }, 100) 
+      }, 100) 
+    }, 1000)
   },
 
   drawSpot (step) {
