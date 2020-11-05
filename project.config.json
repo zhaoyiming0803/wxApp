@@ -39,26 +39,21 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "game": {
       "list": []
     },
     "gamePlugin": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": 3,
       "list": [
         {
           "id": -1,
@@ -90,6 +85,12 @@
           "name": "pages/progress/progress",
           "pathName": "pages/progress/progress",
           "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "测试wx.createAnimation",
+          "pathName": "pages/animation/animation",
           "scene": null
         }
       ]

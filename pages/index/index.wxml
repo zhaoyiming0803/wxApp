@@ -37,4 +37,18 @@
     <checkbox></checkbox>
     <button bindtap="pullDown">pull down</button>
   </view>
+
+  <scroll-view scroll-y="{{true}}" style="height: 100px; background-color: red">
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+    <view class="scroll-view-item">1</view>
+  </scroll-view>
+
+  <view bindtap="navigateToMiniProgram">跳转小程序</view>
+  <view bindtap="navigateToAnimation">跳转到动画页</view>
 </view>

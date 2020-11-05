@@ -14,6 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    return
     setTimeout(() => {
       const val = wx.pageScrollTo({
         scrollTop: 0,
@@ -124,5 +125,18 @@ return
 
   onPageScroll (e) {
     console.log(e)
+  },
+
+  navigateToMiniProgram () {
+    wx.navigateToMiniProgram({
+      appId: 'xxxx',
+      path: 'pages/index/index'
+    })
+  },
+
+  navigateToAnimation () {
+    wx.navigateTo({
+      url: '/pages/animation/animation',
+    })
   }
 })

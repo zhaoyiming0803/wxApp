@@ -45,8 +45,9 @@ Page({
   },
 
   drawSpot (step) {
-    const context = wx.createCanvasContext('canvasSpot', this)
-    // context.clearRect(0, 0, this.data.width, this.data.height);
+    const context = wx.createCanvasContext('canvasSpot')
+    context.save();
+    context.clearRect(0, 0, this.data.width, this.data.height);
 
     // 小球的运动轨迹
     // this.drawEmptyCircle(context, this.data.width/2, this.data.height/2, this.data.radius,'red');
@@ -54,7 +55,6 @@ Page({
     context.translate(this.data.width/2, this.data.height/2); 
     context.rotate(-Math.PI / 180 * (this.data.angle * step));
 
-    context.save();
     context.fillStyle = '#FF5E0B';
     context.beginPath();
     context.arc(0, -this.data.radius, 6, 0, Math.PI * 2, false);
@@ -76,16 +76,17 @@ Page({
   },
 
   drawCircle: function (step) {
-    const context = wx.createCanvasContext('canvasProgress', this)
+    const context = wx.createCanvasContext('canvasProgress')
   
-    // 设置渐变
-    var gradient = context.createLinearGradient(200, 100, 100, 200);
-    gradient.addColorStop("0", "#FF5E0B");
+    // 设置渐变 // 安卓版微信上无效
+    // var gradient = context.createLinearGradient(200, 100, 100, 200);
+    // gradient.addColorStop("0", "#FF5E0B");
     // gradient.addColorStop("0.5", "#40ED94");
     // gradient.addColorStop("1.0", "#5956CC");
 
     context.setLineWidth(4);
-    context.setStrokeStyle(gradient);
+    // context.setStrokeStyle(gradient);
+    context.setStrokeStyle('#FF5E0B')
     context.setLineCap('round')
     context.beginPath();
 

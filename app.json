@@ -10,7 +10,8 @@
     "pages/circle/circle",
     "pages/vant/vant",
     "pages/partial-refresh/partial-refresh",
-    "pages/progress/progress"
+    "pages/progress/progress",
+    "pages/animation/animation"
   ],
   "window": {
     "backgroundTextStyle": "light",
