@@ -1,12 +1,13 @@
 {
-	"navigationBarBackgroundColor": "#f00",
-	"navigationBarTextStyle": "white",
-	"navigationBarTitleText": "首页",
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "原生导航栏title",
 	"backgroundColor": "#eeee",
 	"backgroundTextStyle": "dark",
 	"enablePullDownRefresh": true,
 	"disableScroll": false,
 	"usingComponents": {
-		"mp-icon": "weui-miniprogram/icon/icon"
-	}
+		"mp-icon": "weui-miniprogram/icon/icon",
+		"custom-nav-bar": "../../components/custom-nav-bar/index"
+	},
+	"navigationStyle": "custom"
 }

@@ -6,6 +6,8 @@
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "circle": "/components/circle/circle"
-  }
+    "circle": "/components/circle/circle",
+    "custom-nav-bar": "../../components/custom-nav-bar/index"
+  },
+  "navigationStyle": "custom"
 }

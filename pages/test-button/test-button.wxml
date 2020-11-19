@@ -1,0 +1,4 @@
+<button size="mini">button0</button>
+<button type="warn">button1</button>
+<button plain="{{true}}">button2</button>
+<button disabled="{{true}}">button3</button>

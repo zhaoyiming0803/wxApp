@@ -14,6 +14,8 @@
 }
 .progoress_spot {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   width:220px;
   height: 220px; 
@@ -38,4 +40,14 @@
   height: 16rpx;  
   border-radius: 50%;
   background-color: blue;
+}
+
+.top-container {
+  position: fixed;
+  z-index: 9999998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rpx;
+  background-color: red;
 }

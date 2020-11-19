@@ -11,7 +11,8 @@
     "pages/vant/vant",
     "pages/partial-refresh/partial-refresh",
     "pages/progress/progress",
-    "pages/animation/animation"
+    "pages/animation/animation",
+    "pages/test-button/test-button"
   ],
   "window": {
     "backgroundTextStyle": "light",

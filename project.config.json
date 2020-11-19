@@ -9,7 +9,7 @@
     "minified": true,
     "newFeature": true,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -29,7 +29,8 @@
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "1.5.4",
@@ -38,12 +39,6 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -91,6 +86,12 @@
           "id": -1,
           "name": "测试wx.createAnimation",
           "pathName": "pages/animation/animation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test-button/test-button",
+          "pathName": "pages/test-button/test-button",
           "scene": null
         }
       ]

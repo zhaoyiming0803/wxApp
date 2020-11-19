@@ -16,10 +16,18 @@ Page({
 
   onReady: function () {
     this.countInterval()
+
+    
   },
 
   onHide: function () {
     clearInterval(this.countTimer);
+  },
+
+  toHome () {
+    wx.reLaunch({
+      url: '/pages/progress/progress'
+    })
   },
 
   countInterval: function () {
