@@ -27,7 +27,7 @@ Page({
 
   onShow: function ()  {
     console.log('onShow');
-    
+    return
     if (!app.globalData.isLogin) {
       const isFromLogin = wx.getStorageSync('is_from_login');
       if (isFromLogin) {

@@ -32,7 +32,7 @@
     <text class="user-motto" bindtap='showWechat'>{{motto}}</text>
   </view>
 
-  <button open-type="getUserInfo" bindgetuserinfo="toLogin">用微信授权登录</button>
+  <button open-type="getUserInfo" bindgetuserinfo="toLogin" id="button">用微信授权登录</button>
 
   <view id="selector">
     <button loading="{{ true }}" size="mini" type="primary" hover-start-time="{{ 3000 }}" hover-stay-time="{{ 3000 }}">按钮哈</button>

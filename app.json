@@ -12,7 +12,8 @@
     "pages/partial-refresh/partial-refresh",
     "pages/progress/progress",
     "pages/animation/animation",
-    "pages/test-button/test-button"
+    "pages/test-button/test-button",
+    "pages/async/async"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,6 +24,7 @@
   },
   "tabBar": {
     "selectedColor": "#11cd6e",
+    "custom": true,
     "list": [
       {
         "iconPath": "/static/images/a.png",

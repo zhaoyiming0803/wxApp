@@ -25,12 +25,14 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": false
   },
   "compileType": "miniprogram",
   "libVersion": "1.5.4",
@@ -92,6 +94,12 @@
         {
           "name": "pages/test-button/test-button",
           "pathName": "pages/test-button/test-button",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/async/async",
+          "pathName": "pages/async/async",
           "scene": null
         }
       ]

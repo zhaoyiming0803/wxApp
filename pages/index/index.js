@@ -1,6 +1,6 @@
 const app = getApp();
 
-Page({
+Component({
 
   /**
    * 页面的初始数据
@@ -20,6 +20,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 0
+      })
+    }
+    wx.showModal({
+      title: '提示',
+      content: '这是一个模态弹窗',
+      confirmText: '再等等',
+      confirmColor: '#EB6F36',
+      cancelText: '确认取消',
+      cancelColor: '#333',
+      success (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+    
     return
     setTimeout(() => {
       const val = wx.pageScrollTo({
@@ -38,7 +59,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    wx.createSelectorQuery().select('#button').boundingClientRect(rect => {
+      console.log('rect: ', rect)
+    }).exec()
   },
 
   /**
