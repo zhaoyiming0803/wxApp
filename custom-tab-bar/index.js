@@ -1,4 +1,4 @@
-Component({
+const options = {
   data: {
     selected: 0,
     color: "#7A7E83",
@@ -32,4 +32,16 @@ Component({
       })
     }
   }
-})
+}
+
+function createFactory (options, type) {
+  const typeMap = {
+    component: Component,
+    page: Page,
+    app: App
+  }
+
+  typeMap[type](options)
+}
+
+createFactory(options, 'component')
