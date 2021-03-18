@@ -22,6 +22,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    setTimeout(() => {
+      wx.navigateTo({
+        // url: '/pages/progress/progress',
+        url: '../progress/progress'
+      })
+    }, 2000)
+
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().setData({
         selected: 0
