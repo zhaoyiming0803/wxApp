@@ -1,6 +1,6 @@
 const app = getApp();
 
-Component({
+Page({
 
   /**
    * 页面的初始数据
@@ -14,6 +14,8 @@ Component({
 
     // 此页面 页面内容距最顶部的距离
     height: app.globalData.height * 2 + 20 ,   
+
+    content: 'hello'
   },
 
   /**
@@ -167,6 +169,12 @@ return
   navigateToAnimation () {
     wx.navigateTo({
       url: '/pages/animation/animation',
+    })
+  },
+
+  changeContent () {
+    this.setData({
+      content: 'world'
     })
   }
 })
