@@ -1,4 +1,5 @@
 // pages/login/login.js
+console.log('login-------------------------------')
 Page({
 
   /**

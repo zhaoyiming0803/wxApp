@@ -1,42 +1,40 @@
-// pages/async/async.js
+// async function layout () {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('hello layout')
+//     }, 2000)
+//   })
+// }
 
-async function layout () {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('hello layout')
-    }, 2000)
-  })
-}
+// class Login {
+//   async isLogin() {	
+// 		return this._checkIsLogin()	
+//   }
+//   async _checkIsLogin () {
+//     return layout()
+//   }
+// }
 
-class Login {
-  async isLogin() {	
-		return this._checkIsLogin()	
-  }
-  async _checkIsLogin () {
-    return layout()
-  }
-}
-
-const login = new Login()
+// const login = new Login()
 
 
-function func1 () {
-  return Promise.resolve()
-}
+// function func1 () {
+//   return Promise.resolve()
+// }
 
-async function func2 () {
-  await func1()
-  console.log(123)
-  Promise.resolve().then(() => {
-    console.log(321)
-  })
-}
+// async function func2 () {
+//   await func1()
+//   console.log(123)
+//   Promise.resolve().then(() => {
+//     console.log(321)
+//   })
+// }
 
-func2()
+// func2()
 
-setTimeout(() => {
-  func2()
-}, 1000)
+// setTimeout(() => {
+//   func2()
+// }, 1000)
 
 
 Page({

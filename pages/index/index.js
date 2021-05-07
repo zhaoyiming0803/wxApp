@@ -12,6 +12,8 @@ Page({
       title: '自定义导航栏title', //导航栏 中间的标题
     },
 
+    pageTitle: '这是自定义导航',
+
     // 此页面 页面内容距最顶部的距离
     height: app.globalData.height * 2 + 20 ,   
 
@@ -22,6 +24,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    return
     setTimeout(() => {
       wx.navigateTo({
         // url: '/pages/progress/progress',

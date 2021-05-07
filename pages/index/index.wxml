@@ -1,4 +1,4 @@
-<custom-nav-bar title='自定义导航' background='#fff' bindback="handlerGobackClick" bindhome="handlerGohomeClick"></custom-nav-bar>
+<custom-nav-bar title='{{ pageTitle }}' background='#fff' bindback="handlerGobackClick" bindhome="handlerGohomeClick"></custom-nav-bar>
 
 <view>{{ content }}</view>
 <view bindtap="changeContent">change content</view>
