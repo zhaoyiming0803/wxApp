@@ -1,0 +1,74 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "scroll-view组件",
+          "pathName": "pages/scroll-view/scroll-view",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "日志",
+          "pathName": "pages/logs/logs",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "圆形比例图",
+          "pathName": "pages/circle/circle",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "vant组件",
+          "pathName": "pages/vant/vant",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/progress/progress",
+          "pathName": "pages/progress/progress",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "测试wx.createAnimation",
+          "pathName": "pages/animation/animation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test-button/test-button",
+          "pathName": "pages/test-button/test-button",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/async/async",
+          "pathName": "pages/async/async",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/progress/progress",
+          "pathName": "pages/progress/progress",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

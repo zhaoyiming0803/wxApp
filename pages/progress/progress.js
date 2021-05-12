@@ -11,13 +11,14 @@ Page({
     height: 220,
     radius: 100,
     timerType: 1, // 1：倒计时 2：正计时
-    ratio: 0
+    ratio: 0,
+    abc: getApp().abc
   },
 
   onReady: function () {
     this.countInterval()
 
-    
+    console.log('--------------: ', getApp().abc)
   },
 
   onHide: function () {

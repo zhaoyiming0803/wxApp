@@ -63,3 +63,11 @@
 .container {
   background: red;
 }
+
+.red-point {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background-color: blue;
+  color: #ffffff;
+  border-radius: 50%;
+}

@@ -12,4 +12,6 @@
   </view>
 </view>
 
+<view>abc: {{abc}}</view>
+
 <cover-view class="top-container" bindtap="toHome"></cover-view>

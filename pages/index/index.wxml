@@ -57,4 +57,8 @@
 
   <view bindtap="navigateToMiniProgram">跳转小程序</view>
   <view bindtap="navigateToAnimation">跳转到动画页</view>
+
+  <view class="red-point">
+    <text>12</text>
+  </view>
 </view>
